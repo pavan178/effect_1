@@ -60,6 +60,13 @@ while True:
 
     blur = cv2.bilateralFilter(frame, 9, 75, 75)
     cv2.imshow("Frame", blur)
+    _name = "new" + '.mp4'
+
+    ##_fourcc = cv2.VideoWriter_fourcc(*'MP4V')
+    fourcc = cv2.VideoWriter_fourcc(*'FMP4')
+    out = cv2.VideoWriter('test.mp4', fourcc, 60, (320, 240))
+
+
 
 
 
